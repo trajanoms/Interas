@@ -145,14 +145,107 @@ section {
     z-index: 1;
 }
 
-@media only screen and (max-width: 600px) {
+/* CELULAR RESPONSIVO  */
+@media only screen and (max-width: 768px) {
+    
     .home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: none;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    -webkit-mask: linear-gradient(to top, transparent 0.3%, rgb(3, 0, 8) 99.7%);
+    z-index: 1;
+    }
+
+    .home {
+        width: 130%;
+        height: 100vh;
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        background-color: #03000a;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        object-fit: cover;
+    }
+
+    .about {
+        width: 120%;
+        height: auto;
+        position: relative;
+        background: var(--bg-color);
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        align-items: center;
+        justify-content: space-around;
+        grid-gap: 2rem;
+    }
+
+    .about-text{
+        text-align: center;
+        padding-left: 60px;
+    }
+    
+    .sevices {
+        width: 130%;
+        height: auto;
+        position: relative;
+        background: var(--secound-bg-color)
+    }
+
+    .about-img{
         display: none;
     }
-    .home {
-        background: url(./img/background.png);
+
+    .h-btn{
+        display: none;
     }
+
+    .count li{
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+    .navlist {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .layer:hover{
+        background: linear-gradient(rgba(22,22,22, 0.06)0%, #012746 100%);
+    }
+    
+    .layer h3{
+        position: absolute;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: var(--text-color);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: all .35s;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        padding-top: -500px;
+    }
+    
+    .layer h3:hover {
+        bottom: 49%;
+        opacity: 1;
+    }
+
+
   }
+
+/* CELULAR RESPONSIVO  */
 
 .home-text {
     z-index: 100;
@@ -367,28 +460,29 @@ section {
     top: 0;
     left: 0;
     transition: all .35s;
+    margin-bottom: 0;
 }
 
 .layer:hover{
-    background: linear-gradient(rgba(22,22,22, 0.06)0%, #023c6b 100%);
+    background: linear-gradient(rgba(22,22,22, 0.06)0%, #012746 100%);
 }
 
 .layer h3{
     position: absolute;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    height: 5px;
     color: var(--text-color);
     bottom: 0;
-    padding-top: 375px;
+    padding-top: 320px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: all ease .5s;
+    transition: all linear .25s;
+    user-select: none;
 }
 
 .layer h3:hover {
-    bottom: 15%;
+    bottom: 19%;
     opacity: 1;
 }
