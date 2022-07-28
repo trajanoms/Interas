@@ -197,17 +197,7 @@ section {
         background: var(--secound-bg-color)
     }
 
-    .portfolio-content{
-        width: 130%;
-        height: auto;
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-        grid-gap: 2rem;
-        align-items: center;
-        text-align: center;
-        cursor: pointer;
-        margin-top: 4.4rem;
+    .portfolio{
         padding-left: 60px;
     }
 
