@@ -197,6 +197,19 @@ section {
         background: var(--secound-bg-color)
     }
 
+    .portfolio-content{
+        width: 130%;
+        height: auto;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+        grid-gap: 2rem;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 4.4rem;
+    }
+
     .about-img{
         display: none;
     }
@@ -478,7 +491,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: all linear .25s;
+    transition: all ease-in .25s;
     user-select: none;
 }
 
