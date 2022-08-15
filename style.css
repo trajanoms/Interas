@@ -284,6 +284,18 @@ section {
         position: relative;
     }
 
+    .contact {
+        width: 130%;
+        height: auto;
+        position: relative;
+    }
+
+    .copyright {
+        width: 130%;
+        height: auto;
+        position: relative;
+    }
+
   }
 
 /* CELULAR RESPONSIVO  */
