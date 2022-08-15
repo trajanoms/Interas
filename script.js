@@ -5,4 +5,4 @@ const sr = ScrollReveal ({
 })
 
 sr.reveal('.home-text', {delay:20, origin:'left'})
-sr.reveal('.about, .sevices, .portfolio, .blog, .contact, .copyright', {delay:100, origin:'bottom'})
+sr.reveal('.about, .sevices, .portfolio, .blog', {delay:100, origin:'bottom'})
